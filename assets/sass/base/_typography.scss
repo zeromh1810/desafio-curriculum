@@ -1,0 +1,30 @@
+h3 {
+	font-size: $x-large;
+	margin: 0;
+}
+
+
+p {
+	font-size: $medium;
+	color: $midnight-blue;
+	font-family: $lato;
+	margin-top: 0;
+}
+
+.title-container {
+
+	&__head {
+		font-size: $xxx-large;
+		margin: 0;
+	}
+
+	&__sub {
+		font-size: $large;
+		margin-top: 10px;
+	}
+
+	&--big {
+		padding: 1.3rem;
+	}
+
+}

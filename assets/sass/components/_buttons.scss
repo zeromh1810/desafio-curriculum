@@ -1,0 +1,25 @@
+.primary-button {
+    font-family: $lato;
+    padding:.8em 3em;
+    color: $night-black;
+    font-size: $large;
+    border: 1px solid $night-black;
+    background-color: $sun-white;
+    text-align: center;
+
+    &--small {
+        @extend .primary-button;
+        font-size: $medium;
+    }
+
+    &:hover {
+        @extend .primary-button;
+        border: 1px solid $quick-silver;
+    }
+
+    &:focus {
+        @extend .primary-button;
+        color: quick-silver;
+        border: 1px solid $quick-silver;
+    }
+}

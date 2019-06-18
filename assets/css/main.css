@@ -1,0 +1,336 @@
+@charset "UTF-8";
+/**
+  * Patrón 7-1
+  *
+  * Esta es la estructura del patrón 7-1 utilizado en DesafíoLatam
+  * para la enseñanza del uso correcto de patrones dentro de CSS y
+  * también para la utilización de éste dentro de estructuras de 
+  * trabajo colaborativo.
+  *
+  * @author Cristóbal Domínguez <cristobald@me.com>
+  * @since 1.0
+  *
+  */
+.primary-button, .primary-button:focus, .primary-button--small:focus, .primary-button:hover, .primary-button--small:hover, .primary-button--small {
+  font-family: "Lato", sans-serif;
+  padding: 0.8em 3em;
+  color: #071013;
+  font-size: 18px;
+  border: 1px solid #071013;
+  background-color: #fff;
+  text-align: center;
+}
+.primary-button--small {
+  font-size: 16px;
+}
+.primary-button:hover, .primary-button--small:hover {
+  border: 1px solid #a2a2a2;
+}
+.primary-button:focus, .primary-button--small:focus {
+  color: quick-silver;
+  border: 1px solid #a2a2a2;
+}
+
+.navbar {
+  display: none;
+}
+
+.sidebar {
+  grid-column: 1/3;
+  background-color: #7cea9c;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: fixed;
+}
+.sidebar__list {
+  list-style: none;
+  padding-left: 0;
+}
+.sidebar__list__item {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.sidebar__list__item__link {
+  text-decoration: none;
+  color: #2d3047;
+}
+
+.avatar-container {
+  max-width: 150px;
+}
+.avatar-container img {
+  border-radius: 50%;
+}
+
+@media all and (max-width: 570px) {
+  .navbar {
+    position: fixed;
+    display: block;
+    background-color: #7cea9c;
+    max-width: 100%;
+    width: 100%;
+  }
+  .navbar__logo {
+    font-size: 18px;
+    padding: 1rem;
+    display: inline-block;
+    color: #2d3047;
+  }
+  .navbar__logo h1 {
+    margin: 0;
+  }
+  .navbar__list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .navbar__item {
+    padding: 1em;
+    border-bottom: 1px solid #2d3047;
+    font-family: "Lato", sans-serif;
+  }
+  .navbar__item:last-child {
+    border-bottom: none;
+  }
+  .navbar__link {
+    color: #2d3047;
+    text-decoration: none;
+  }
+  .navbar__icon {
+    text-align: right;
+    display: inline-block;
+    position: absolute;
+    right: 25px;
+    top: 15px;
+  }
+  .navbar .open {
+    display: block;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+input {
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #2d3047;
+  border: 1px solid #a2a2a2;
+  margin: 1rem 0;
+  max-width: 70vw;
+  width: 100%;
+}
+input::-webkit-input-placeholder {
+  color: #a2a2a2;
+  font-size: 16px;
+  font-style: italic;
+}
+input::-moz-placeholder {
+  color: #a2a2a2;
+  font-size: 16px;
+  font-style: italic;
+}
+input:-ms-input-placeholder {
+  color: #a2a2a2;
+  font-size: 16px;
+  font-style: italic;
+}
+input::placeholder {
+  color: #a2a2a2;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/*
+ *
+ * Este archivo contiene las referencias del código boilerplate de tu proyecto.
+ * Aquí podrás encontrar referencias al archivo _reset.scss, a las tipografías
+ * y probablemente algún otro archivo de estilos que defina de una forma estándard
+ * los estilos de elementos usados en HTML.
+ *
+ *
+ * Nota: 
+ * Si tu proyecto usa muchas animaciones, deberías considerar agregar dentro de
+ * esta carpeta un archivo /_animations.scss que contenga las definiciones de los
+ * @keyframes de todas tus animaciones.
+ *
+ * @author Cristóbal Domínguez <cristobald@me.com>
+ * @since 1.0
+ *
+ */
+h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  color: #2d3047;
+  font-family: "Lato", sans-serif;
+  margin-top: 0;
+}
+
+.title-container__head {
+  font-size: 50px;
+  margin: 0;
+}
+.title-container__sub {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.title-container--big {
+  padding: 1.3rem;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+@media all and (max-width: 768px) {
+  .sidebar {
+    grid-column: 1/12;
+    max-width: 100vw;
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+  .sidebar__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .sidebar__list__item__link {
+    margin: 10px;
+    font-size: 14px;
+  }
+
+  .info-container {
+    padding-left: 0px !important;
+    margin-top: 120px;
+  }
+
+  .avatar-container {
+    max-width: 100px;
+    margin-bottom: 2rem;
+    margin: 0 auto;
+  }
+  .avatar-container img {
+    border-radius: 50%;
+  }
+}
+@media all and (max-width: 570px) {
+  .info-container {
+    margin-top: 10rem;
+    padding-left: 0px !important;
+  }
+
+  .avatar-container__block {
+    display: block !important;
+    max-width: 150px;
+    margin-bottom: 2rem;
+    margin: 0 auto 30px;
+  }
+  .avatar-container__block img {
+    border-radius: 50%;
+  }
+
+  .about-me {
+    min-height: 0px !important;
+  }
+}
+.info-container {
+  grid-column: 2/12;
+  padding-left: 200px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 700px;
+}
+.about-me__social {
+  padding: 0;
+}
+.about-me__social__item {
+  text-decoration: none;
+  list-style: none;
+  padding-right: 1rem;
+  display: inline-block;
+  color: #2d3047;
+}
+
+.separador {
+  max-width: 80vw;
+  width: 100%;
+  height: 1px;
+  background-color: #a2a2a2;
+  margin: 50px auto;
+}
+
+.experiencia-container__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.container-between {
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.avatar-container__block {
+  display: none;
+}
+
+.contact-container {
+  margin: 1.4rem 0;
+}
+.contact-container__component__input {
+  padding: 1rem 0;
+}
+.contact-container__component__input__message {
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #2d3047;
+  border: 1px solid #a2a2a2;
+  margin: 1rem 0;
+  max-width: 70vw;
+  width: 100%;
+  height: 100px;
+  overflow: scroll;
+}
+
+/*# sourceMappingURL=main.css.map */

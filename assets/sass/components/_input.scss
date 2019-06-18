@@ -1,0 +1,35 @@
+input {
+	padding: 1rem;
+	border-radius: 5px;
+	font-size: $large;
+	color: $midnight-blue;
+	border: 1px solid $quick-silver;
+	margin: 1rem 0;
+	max-width: 70vw;
+	width: 100%;
+
+	&::-webkit-input-placeholder {
+		color: $quick-silver;
+		font-size: $medium;
+		font-style:italic;
+	}
+
+	&::-moz-placeholder {
+		color: $quick-silver;
+		font-size: $medium;
+		font-style:italic;
+	}
+
+	&:-ms-input-placeholder {
+		color: $quick-silver;
+		font-size: $medium;
+		font-style:italic;
+	}
+
+	&::placeholder {
+		color: $quick-silver;
+		font-size: $medium;
+		font-style:italic;
+	}
+
+}

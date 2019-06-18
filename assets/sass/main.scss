@@ -1,0 +1,34 @@
+/**
+  * Patrón 7-1
+  *
+  * Esta es la estructura del patrón 7-1 utilizado en DesafíoLatam
+  * para la enseñanza del uso correcto de patrones dentro de CSS y
+  * también para la utilización de éste dentro de estructuras de 
+  * trabajo colaborativo.
+  *
+  * @author Cristóbal Domínguez <cristobald@me.com>
+  * @since 1.0
+  *
+  */
+
+
+
+@import 'abstracts/variables';
+
+@import 'components/buttons';
+@import 'components/navegation';
+@import 'components/input';
+
+
+@import 'base/index';
+@import 'base/typography';
+@import 'base/reset';
+
+@import 'layout/header';
+@import 'layout/index';
+@import 'layout/footer';
+@import 'layout/body';
+@import 'layout/grid';
+
+
+
