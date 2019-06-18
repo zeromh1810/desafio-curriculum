@@ -15,12 +15,12 @@ $(function(){
 		// ESTO ES PARA EVITAR QUE EL SITIO CAMBIE DE PÁGINA, PARA QUE NO TENGA UN CAMBIO DE DIRECCIÓN DENTRO DEL MISMO LANDING 
 		event.preventDefault();
   
-		var gato = this.hash;
+		var navegation = this.hash;
   
 		$("html, body").animate({
-		  scrollTop: $(gato).offset().top
+		  scrollTop: $(navegation).offset().top
 		}, 800, function(){
-		  window.location.hash = gato;
+		  window.location.hash = navegation;
 		});
 	  }
 	});
