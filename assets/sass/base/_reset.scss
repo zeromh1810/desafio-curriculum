@@ -52,7 +52,7 @@ img {
 	}
 
 	.info-container {
-		padding-left: 0px !important;
+		padding-left: 0px;
 		margin-top: 120px;
 
 	}
@@ -72,12 +72,12 @@ img {
 @media all and (max-width: 570px) {
 	.info-container {
 		margin-top: 10rem;
-		padding-left: 0px !important;
+		padding-left: 0px;
 
 	}
 
 	.avatar-container__block {
-		display: block !important;
+		display: block;
 		max-width: 150px;
 		margin-bottom: 2rem;
 		margin: 0 auto 30px;
@@ -88,7 +88,7 @@ img {
 	}
 
 	.about-me {
-		min-height: 0px !important;
+		min-height: 0px;
 	}
 
 }
